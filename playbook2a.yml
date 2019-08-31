@@ -1,0 +1,87 @@
+---
+# Demo ACI Playbook
+- name: Configuring Example Tenant
+  hosts: apic
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Create a New Tenant
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: present
+        
+    - name: Create a New Tenant2
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive2"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: absent
+        
+    - name: Create a New Tenant3
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive3"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: absent
+        
+    - name: Create a New Tenant4
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive4"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: absent
+
+    - name: Create a New Tenant5
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive5"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: absent
+        
+    - name: Create a New Tenant6
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive6"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: absent
+        
+    - name: Create a New Tenant7
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive7"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: absent
+        
+    - name: Create a New Tenant8
+      aci_tenant:
+        host: "{{ inventory_hostname }}"
+        username: "{{ user }}"
+        password: "{{ pass }}"
+        tenant: "CiscoLive8"
+        description: "Tenant configured by Ansible"
+        validate_certs: no
+        state: absent
